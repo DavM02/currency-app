@@ -1,0 +1,22 @@
+.change-currency span {
+    font-size: 30px;
+    color: var(--white);
+}
+.change-currency {
+    position: absolute;
+    top: 50%;
+    transform: translateY(calc(-50% - 5px));
+    right: -50px;
+    border: none;
+    outline: none;
+    padding: 0px 5px 5px 5px;
+    background-color: var(--gray);
+    cursor: pointer;
+    border: 0.5px solid var(--beige);
+    border-radius: 2px;
+    transition: background-color 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.change-currency:hover {
+    background-color: var(--beige);
+}

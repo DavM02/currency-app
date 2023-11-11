@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
-}
+ * {
+   padding: 0;
+   margin: 0;
+   -webkit-tap-highlight-color: transparent;
+   box-sizing: border-box;
+   -webkit-user-drag: none;
+   user-select: none;
+ }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+ body,
+ html, #root, .App  {
+   width: 100%;
+   height: 100%;
+ }
+ 
+ li {
+  list-style: none;
+ }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+ ::grammar-error {
+  text-decoration: none;
+ }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ .App {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 50px;
+ }
+
+ body {
+  background-color: var(--black);
+  /* background: url('./assets/Art.svg') center/cover no-repeat; */
+
+ 
+ }
+
+ 
+ .glass {
+   /* From https://css.glass */
+   border-radius: 10px;
+   width: 100%;
+   background: rgba(67, 67, 67, 0.025);
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(4.5px);
+   -webkit-backdrop-filter: blur(2.5px);
+   border: 0.3px solid var(--gray);
+   text-align: center;
+   color: var(--white);
+   margin-bottom: 10px;
+ }
+ 
+ :root {
+  --white: rgb(255, 255, 255);
+  --black:rgb(10, 10, 10);
+  --gray: rgb(118, 118, 118);
+  --beige: rgba(186, 169, 151);
+--green: rgb(92 107 92);
 }
 
-.App-link {
-  color: #61dafb;
+@font-face {
+  font-family: 'gilroyRegular';
+  src: url('./fonts/Gilroy-Regular.ttf');
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@font-face {
+  font-family: 'gilroyBold';
+  src: url('./fonts/Gilroy-Bold.ttf');
+}
+
+/* media-query */
+
+@media all and (max-width: 400px) {
+  body {
+    width: 400px !important;
   }
 }
+

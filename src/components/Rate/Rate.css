@@ -1,0 +1,28 @@
+.update-time {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    font-family: 'gilroyRegular', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.current-rate {
+ 
+    padding: 10px;
+     margin-bottom: 10px; 
+     font-family: 'gilroyRegular', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.update-time .loader::before, 
+.update-time .loader::after,
+ .current-rate .loader::after,
+ .current-rate .loader::before    {
+    --gray: var(--black) !important;
+ 
+}
+ 
+ 
+  

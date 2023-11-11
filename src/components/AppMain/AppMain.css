@@ -1,0 +1,35 @@
+.app-wrapper {
+    padding: 40px 30px;
+    width: 300px;
+    height: 450px;
+    position: relative;
+}
+ 
+.app-inner {
+    position: relative;
+}
+
+.app-inner::before {
+    position: absolute;
+    content: "";
+    width: 120px;
+    z-index: -1;
+    border-radius: 50%;
+    height: 120px;
+    top: -2%;
+    right: -10%;
+    background-color: var(--gray);
+}
+ 
+
+.app-inner::after {
+    position: absolute;
+    content: "";
+    width: 200px;
+    z-index: -1;
+    border-radius: 50%;
+    height: 200px;
+    bottom: -2%;
+    left: -10%;
+    background-color: var(--beige);
+}

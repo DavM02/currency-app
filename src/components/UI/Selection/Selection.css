@@ -1,0 +1,83 @@
+ li {
+     background-color: var(--black);
+     /* margin-top: -1px; */
+     color: aliceblue;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     border-bottom: 0.5px solid var(--gray);
+     border-right: 0.5px solid var(--gray);
+     border-left: 0.5px solid var(--gray);
+     transition: background-color 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+     font-family: 'gilroyBold', Arial, Helvetica, sans-serif;
+     font-size: 18px;
+     letter-spacing: 1px;
+ }
+
+ li:hover {
+     background-color: var(--gray) !important;
+ }
+
+ li img {
+     width: 35px;
+     border: var(--gray) 0.5px solid;
+ }
+
+ .selection-header > .row img{
+    width: 37px;
+    border: var(--white) 0.5px solid;
+ }
+
+ .custom-selection {
+     position: absolute;
+     top: 45px;
+     right: 0;
+     width: 100%;
+     height: 0px;
+     overflow-y: scroll;
+     /* scroll-behavior: smooth; */
+     transition: 1s height cubic-bezier(0.25, 0.46, 0.45, 0.94);
+     z-index: 4;
+ }
+
+ .custom-selection::-webkit-scrollbar {
+     width: 5px;
+     background-color: rgb(69, 69, 69);
+
+ }
+
+ .custom-selection::-webkit-scrollbar-thumb {
+     background-color: var(--white);
+     /* Цвет ползунка */
+     border-radius: 6px;
+     /* Скругленные углы */
+     height: 40px;
+ }
+
+
+ .selection-wrapper {
+     position: relative;
+ }
+
+ .selection-wrapper:nth-child(1) .custom-selection {
+     z-index: 6;
+ }
+
+ .selection-header {
+     background-color: var(--gray);
+     height: 44.93px;
+     width: 100%;
+     padding-right: 5px;
+     margin-bottom: 10px;
+     cursor: pointer;
+   position: relative;
+   font-family: 'gilroyBold', Arial, Helvetica, sans-serif;
+   font-size: 18px;
+   letter-spacing: 1px;
+ }
+ 
+ .selected-item {
+    background-color: var(--beige);
+    
+ }
+
+ 

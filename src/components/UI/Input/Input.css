@@ -1,0 +1,27 @@
+input, .input-wrapper{
+    width: 100%;
+
+}
+
+input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: var(--beige);
+    color: var(--white);
+    border: 0.5px solid var(--white);
+    font-family: 'gilroyRegular', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+input::selection {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+::placeholder {
+    color: var(--white);
+    opacity: 60%;
+}
