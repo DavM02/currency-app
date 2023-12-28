@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcurrency_app=self.webpackChunkcurrency_app||[]).push([[1602],{1602:(e,c,p)=>{e.exports=p.p+"static/media/RS.e21703790bfecf316d1d.svg"}}]);
