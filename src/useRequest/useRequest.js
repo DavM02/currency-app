@@ -7,7 +7,7 @@ function useRequset() {
 
     const fetchData = async (firstType, secondType, num) => {
 
-        const url = `https://v6.exchangerate-api.com/v6/bce47724efefbb70060c6115/latest/${firstType}`
+        const url = `https://v6.exchangerate-api.com/v6/068ca31929adae640da3d078/latest/${firstType}`
 
         try {
             const response = await fetch(url);
