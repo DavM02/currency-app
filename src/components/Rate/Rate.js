@@ -20,7 +20,7 @@ function Rate() {
 
     const options = { year: 'numeric', month: 'long', day: '2-digit', };
 
-    const covertedDate = new Date(states.getRate.date * 1000).toLocaleDateString(undefined, options)
+    const convertedDate = new Date(states.getRate.date * 1000).toLocaleDateString('en-US', options)
 
     return (<>
 
@@ -36,7 +36,7 @@ function Rate() {
 
         <div className="update-time">
 
-            {states.getRate.date ? <> Last update time: <br />{covertedDate}</> : <Loader></Loader>}
+            {states.getRate.date ? <> Last update time: <br />{convertedDate}</> : <Loader></Loader>}
 
         </div >
 
